@@ -1,0 +1,130 @@
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  
+}
+body{
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .issues-page {
+  width: 100%;
+  }
+  .comment{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .comment{
+    display: none;
+  }
+}
+
+
+
+
+
+
+div{
+ 
+  .new-issue{
+    background-color:#15ad48;
+    color: white;
+    font-size: large;
+    padding: 10px 20px;
+    border-radius:4px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 45%;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color:#008E9B;
+    }
+  }
+  .issues{
+    padding: 0 70px;
+    .list-container{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid lightgrey;
+      border-bottom: 0;
+      border-radius: 10px;
+
+      li{
+        height: 100px;
+        border-bottom: 1px solid lightgrey;
+        
+        .list{
+          padding: 30px;
+          padding-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .title{
+            .icon{
+              padding-right: 8px;
+              color: green;
+            }
+            a{
+              font-weight: bold;
+              font-size: 16px;
+              color: #fff;
+              text-decoration: none;
+            }
+            a:hover {
+              color: dodgerblue;
+            }
+          }
+          .date{
+            padding-left: 30px;
+            font-size: 0.8rem;
+            color: gray;
+            a{
+              color: gray;
+              text-decoration: none;
+            }
+            a:hover {
+              color: dodgerblue;
+            }
+          }
+          .comment{
+            padding-left: 30px;
+            font-size: 0.8rem;
+            color: #fff;
+            
+            .icon{
+              padding-right: 8px;
+              color: green;
+            }
+          }
+        }
+      }
+    
+      li:hover{
+        background-color:#333;
+        cursor: pointer;
+      }
+    }
+  }
+}

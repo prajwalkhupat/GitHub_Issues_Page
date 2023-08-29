@@ -1,0 +1,47 @@
+
+
+.btn-container{
+  padding-bottom: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    button {
+      color: dodgerblue;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      /* margin: 30px 30px; */
+      border-radius: 10px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      background-color: transparent;
+    }
+    span{
+      button {
+        color: #fff;
+      }
+    }
+
+    button:hover {
+      border: 1px solid grey;
+      background-color: #BDDBF6;
+      color: black;
+    }
+
+    button:active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    button:disabled {
+      color: gray;
+      cursor: not-allowed;
+      background-color: white;
+    }
+}
+  
+ 
+  
+  

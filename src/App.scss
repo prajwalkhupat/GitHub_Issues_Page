@@ -1,0 +1,47 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html{
+    
+  }
+  body{
+    font-family: Arial, sans-serif;
+  }
+
+ 
+  .issues-page {
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    font-size: 1rem;
+  }
+
+
+
+
+  @media only screen and (max-width: 1024px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .issues-page {
+    width: 100%;
+    }
+    .comment{
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
+    .comment{
+      display: none;
+    }
+  }
